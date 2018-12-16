@@ -1,0 +1,33 @@
+{
+    "manifest_version": 2,
+    "name": "vidinspector beta",
+    "version": "0.4",
+
+    "description": "Busca videos en redes sociales y permite descargarlos",
+
+    "icons": {
+        "48": "icons/icono-48.png"
+    },
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "permissions": [
+        "webRequest",
+        "<all_urls>",
+        "nativeMessaging"
+    ],
+
+    "browser_action": {
+        "default_icon": "icons/icono-32.png",
+        "default_title": "Beastify",
+        "default_popup": "popup/info.html"
+    },
+
+    "applications": {
+        "gecko": {
+            "id": "vidinspector@sebaorrego.net"
+        }
+    }
+}
